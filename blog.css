@@ -1,0 +1,100 @@
+#blog-container
+{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 8vw;
+}
+
+#blog-container .blogs
+{
+	width: 60%;
+}
+
+#blog-container .blogs img
+{
+	width: 100%;
+	border-radius: 19px;
+}
+
+#blog-container .blogs .post
+{
+	padding-bottom: 60px;
+}
+
+#blog-container .blogs .post h3
+{
+	color: #29303B;
+	padding: 15px 0 10px 0;
+}
+
+#blog-container .blogs .post p
+{
+	color: #757373;
+	padding-bottom: 20px;
+}
+
+#blog-container .blogs .post a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: rgb(21, 21, 100);
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+#blog-container .cate
+{
+	width: 30%;
+}
+
+#blog-container .cate h2
+{
+	padding-bottom: 7px;
+}
+
+#blog-container .cate a
+{
+	text-decoration: none;
+	color: #757373;
+	font-weight: 500;
+	line-height: 45px;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------- For tablet screen ----------------*/
+/*------------------------------------------------------*/
+@media (max-width: 789px)
+{
+	#blog-container
+	{
+		padding: 8vw 4vw;
+	}
+}
+
+
+
+
+/*------------------------------------------------------*/
+/*------------------- For mobile screen ----------------*/
+/*------------------------------------------------------*/
+@media screen and (max-width: 475px)
+{
+	#blog-container
+	{
+		flex-direction: column;
+	}
+
+	#blog-container .blogs
+	{
+		width: 100%;
+	}
+
+	#blog-container .cate
+	{
+		width: 100%;
+	}
+}

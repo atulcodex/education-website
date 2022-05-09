@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+/*------------- Navigation style end ------------*/
+
+
+
+/*------------- Hero section styling start --------------*/
+#home
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/back.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home h2
+{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+#home p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+}
+
+#home .btn
+{
+	margin-top: 30px;
+}
+
+#home a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#home a.blue
+{
+	color: #fff;
+	background: rgb(21, 21, 100);
+	transition: 0.3s ease;
+}
+
+#home a.blue:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+#home a.yellow
+{
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#home a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Hero section styling end --------------*/
+
+
+/*------------- Features section styling start -------------*/
+#features
+{
+	padding: 5vw 8vw 0 8vw;
+	text-align: center;
+}
+
+#features .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features .fea-box
+{
+	background: #edf1f2;
+	text-align: start;
+	padding: 1.2rem;
+	border-radius: 6px;
+}
+
+#features .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features .fea-box p
+{
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgb(70, 70, 87);
+}
+/*------------- Features section styling end -------------*/
+
+
+/*------------- Courses section styling start ------------*/
+#course
+{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#course .course-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#course .courses
+{
+	text-align: start;
+	background: #edf1f2;
+	height: 100%;
+	position: relative;
+}
+
+#course .courses img
+{
+	width: 100%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
+}
+
+#course .courses .details
+{
+	padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i
+{
+	color: #fdc93b;
+	font-size: .9rem;
+}
+
+#course .courses .cost
+{
+	background-color: rgb(74, 74, 136);
+	color: #fff;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	bottom: 100px;
+}
+/*------------- Courses section styling end ------------*/
+
+
+/*------------- Registration section styling start ----------*/
+#registration
+{
+	padding: 6vw 8vw 6vw 8vw;
+	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/signup.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#registration .reminder, #registration .reminder h1
+{
+	color: #fff;
+}
+
+#registration .reminder .time
+{
+	display: flex;
+	margin-top: 40px;
+}
+
+#registration .reminder .time .date
+{
+	text-align: center;
+	padding: 13px 33px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(4px);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	margin: 0 5px 10px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+#registration .form
+{
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input
+{
+	margin: 15px 0;
+	padding: 15px 10px;
+	border: 1px solid rgb(84, 40, 241);
+	outline: none;
+}
+
+#registration .form input::placeholder
+{
+	color: #413c3c;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+#registration .form .btn
+{
+	margin-top: 20px;
+}
+
+#registration .form a.yellow
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Registration section styling end ----------*/
+
+
+
+/*------------- Experts section styling starts ----------*/
+#experts
+{
+	padding: 8vw 8vw 8vw 8vw;
+	text-align: center;
+}
+
+#experts .expert-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#experts .expert-box .profile
+{
+	background: #fafaf1;
+	padding: 30px 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#experts .expert-box .profile:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.pro-links
+{
+	margin-top: 10px;
+}
+
+.pro-links i
+{
+	padding: 10px 13px;
+	border: 1px solid rgb(21, 21, 100);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.pro-links i:hover
+{
+	background: rgb(21, 21, 100);
+	color: #fff;
+}
+/*------------- Experts section styling ends ----------*/
+
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 8vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+
+footer .subscribe
+{
+	margin-top: 20px;
+}
+
+footer input
+{
+	width: 220px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+	color: #fff;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+}
+
+footer .copyright .pro-links i
+{
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+/*---------------------------------------------------------*/
+/*-------------------- Ipad screen styling ----------------*/
+/*---------------------------------------------------------*/
+@media screen and (max-width: 789px)
+{
+	nav
+	{
+		padding: 15px 20px;
+	}
+
+	nav img
+	{
+		width: 130px;
+	}
+
+	#menu-btn
+	{
+		display: initial;
+	}
+
+	#menu-close
+	{
+		display: initial;
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 30px 0 20px 20px;
+	}
+
+	nav .navigation ul
+	{
+		position: absolute;
+		top: 0;
+		right: -220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 220px;
+		height: 100vh;
+		background: rgba(17, 20, 104, 0.45);
+		backdrop-filter: blur(4.5px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		transition: 0.3s ease-in;
+	}
+
+	nav .navigation ul.active
+	{
+		right: 0;
+	}
+
+	nav .navigation ul li
+	{
+		padding: 20px 0 20px 40px;
+		margin-left: 0;
+	}
+
+	nav .navigation ul li a
+	{
+		color: #fff;
+	}
+
+	#home
+	{
+		padding: 0px;
+	}
+
+	#home p
+	{
+		width: 90%;
+	}
+
+	#features
+	{
+		padding: 8vw 4vw 0 4vw;
+	}
+
+	#course
+	{
+		padding: 8vw 4vw 8vw 4vw;
+	}
+
+	#registration
+	{
+		padding: 6vw 4vw 6vw 4vw;
+		gap: 2.2rem;
+	}
+
+	#registration .reminder .time
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	#experts
+	{
+		padding: 8vw 4vw 6vw 4vw;
+	}
+
+	footer .copyright .pro-links
+	{
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 475px)
+{
+	#registration
+	{
+		flex-direction: column;
+	}
+
+	.reminder p, .reminder h1
+	{
+		text-align: center;
+	}
+
+	.reminder h1
+	{
+		font-size: 1.8rem;
+	}
+
+	#registration .reminder .time
+	{
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+}
